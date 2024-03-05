@@ -7,3 +7,5 @@
 [git](git.md)
 
 [gp](gp.md)
+
+[doc](doc/test.md)
