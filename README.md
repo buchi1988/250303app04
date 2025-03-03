@@ -1,4 +1,4 @@
-# マイウェブサイト
+# 250303app04
 
 GitHub Pagesでホスティングされている個人ウェブサイトです。
 
@@ -23,7 +23,7 @@ GitHub Pagesでホスティングされている個人ウェブサイトです�
 
 1. このリポジトリをクローンします：
    ```
-   git clone https://github.com/buchi1988/buchi1988.github.io.git
+   git clone https://github.com/buchi1988/250303app04.git
    ```
 
 2. ファイルを編集して、自分の情報に更新します。
