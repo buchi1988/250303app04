@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.game-container {
+    width: 800px;
+    max-width: 95%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.header {
+    padding: 20px;
+    background-color: #4a90e2;
+    color: white;
+    text-align: center;
+}
+
+.score-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+
+#game-area {
+    position: relative;
+    height: 500px;
+    background-color: #e9f5ff;
+    overflow: hidden;
+}
+
+.glasses {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    cursor: pointer;
+    transition: transform 0.1s;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 10; /* z-indexを追加 */
+    pointer-events: auto; /* ポインターイベントを明示的に設定 */
+}
+
+.glasses:hover {
+    transform: scale(1.1);
+}
+
+button {
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #f57c00;
+}
+
+.hidden {
+    display: none;
+}
+
+#game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+#game-over h2 {
+    margin-bottom: 20px;
+    color: #4a90e2;
+}
+
+#restart-button {
+    margin-top: 20px;
+}
